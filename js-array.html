@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+    </body>
+    <script>
+        var array1=["X","A","F","Y"]
+        array1.sort();
+        array1.reverse();
+        document.getElementById("demo").innerHTML=array1;
+
+        var array1=["dog","cat","cow","hen"];
+        var len=array1.length;
+        document.getElementById("demo1").innerHTML=len;
+
+
+        let i=0;
+        var text=" "; 
+        var array1=["dog","cat","cow","hen"];
+        var len=array1.length;
+        for(i=0;i<len;i++)
+        {
+            text+=array1[i]+"<br>";
+        }
+        document.getElementById("demo2").innerHTML=text;
+
+
+        var array2=["apple","orange","mango","grapes"];
+        array2.push("papaya");
+        document.getElementById("demo").innerHTML=array2;
+
+        array2.pop();
+        document.getElementById("demo").innerHTML=array2;
+
+
+        const vegies=["onion","carrot","radish","tomato"]
+        document.getElementById("demo").innerHTML=vegies.toString();
+
+        const veg=["onion","carrot","radish","tomato"]
+        document.getElementById("demo").innerHTML=veg.join("*");
+
+    </script>
+</html>
